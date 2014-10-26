@@ -8,7 +8,7 @@ body {
 }
 
 img {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   vertical-align: top;
 }
@@ -282,6 +282,9 @@ body > footer .copyrights:before {
   text-align: center;
   font-style: italic;
   margin-top: 0;
+}
+.post article p img {
+  margin: 0 auto;
 }
 .post footer .social {
   margin-bottom: 1em;

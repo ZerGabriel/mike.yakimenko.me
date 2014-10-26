@@ -13,17 +13,17 @@ tags: [Canon, protoria, Обращение]
 
 Пример фотографии где нет светлого фона.
 
-![Нормально.](/static/files/no_light_back.JPG)
+![Нормально.](http://macgera.s3.amazonaws.com/old-media/files/no_light_back.JPG)
 
 Пример фотографий со светлым фоном.
 
-![Плохо.](/static/files/light_back1.JPG)
+![Плохо.](http://macgera.s3.amazonaws.com/old-media/files/light_back1.JPG)
 
-![Плохо.](/static/files/light_back2.JPG)
+![Плохо.](http://macgera.s3.amazonaws.com/old-media/files/light_back2.JPG)
 
 Конкретней.
 
-![Плохо.](/static/files/light_back_both.jpg)
+![Плохо.](http://macgera.s3.amazonaws.com/old-media/files/light_back_both.jpg)
 
 Оказалось что на фотографиях присутствуют неприятные отметки. Буд-то объектив запыленный. Я сразу же отправился в магазин, и сообщил о проблеме. Специалисты магазина указали сразу же на проблему: в объективе между линзами пыль. В магазин присутствии меня и моей жены несколько раз меняли объектив, и да, снимки отличные!
 

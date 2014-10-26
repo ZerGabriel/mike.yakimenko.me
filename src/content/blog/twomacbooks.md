@@ -5,7 +5,7 @@ tags: [Интернет, Дизайн, Apple]
 
 Наткнулся на сайт и залип минут на тридцать. Не то что бы я был так глуп. Зачем-то пытался понять это какой-то хитрый замысел, или просто ошибка?
 
-![Два макбука то зачем?!](/static/files/twomacbooks.png)
+![Два макбука то зачем?!](http://macgera.s3.amazonaws.com/old-media/files/twomacbooks.png)
 
 [bellsdesign.com](http://www.bellsdesign.com/)
 

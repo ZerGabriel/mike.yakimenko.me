@@ -71,7 +71,12 @@
             font-style: italic;
             margin-top: 0;
         }
-    } // articel
+        p {
+            img {
+                margin: 0 auto;
+            } // img
+        } // p
+    } // article
     footer {
         .social {
             margin-bottom: 1em;

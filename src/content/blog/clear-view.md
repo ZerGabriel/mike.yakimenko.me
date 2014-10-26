@@ -7,12 +7,12 @@ tags: [ux, Интернет]
 
 В данном случае я говорю о контрасте. На пример сайт брендовой одежды **zara**.
 
-![Плохой контраст](/static/files/zara.jpg)
+![Плохой контраст](http://macgera.s3.amazonaws.com/old-media/files/zara.jpg)
 
 Забавно да? Ничего же не видно.
 
 А вот например промо сайт [labs.bittorrent](http://labs.bittorrent.com/). Сначала если вдруг не загрузится картинка фона, то доступность информации снижается в разы.
 
-![Плохой контраст](/static/files/bittorrent.png)
+![Плохой контраст](http://macgera.s3.amazonaws.com/old-media/files/bittorrent.png)
 
 Простые ошибки разработчиков, усложняющие доступность информации.

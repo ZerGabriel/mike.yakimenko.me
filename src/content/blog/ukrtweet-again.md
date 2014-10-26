@@ -13,23 +13,23 @@ tags: [Событие, Твиттер]
 
 ### Не много фото и видео c УкрТвиит 3.
 
-![Начало ukrtweet, я написал на доске, в помещении кофебрейка](/static/files/IMAG0105.jpg)
+![Начало ukrtweet, я написал на доске, в помещении кофебрейка](http://macgera.s3.amazonaws.com/old-media/files/IMAG0105.jpg)
 
 *Начало ukrtweet, я написал на доске, в помещении кофебрейка*
 
-![Марчнко](/static/files/IMAG0099.jpg)
+![Марчнко](http://macgera.s3.amazonaws.com/old-media/files/IMAG0099.jpg)
 
 *Выступление [@shami13](https://twitter.com/#!/shami13), довольно забавно было :)*
 
-![Мой скромный обед в кофелайф, Виски и чизкейк.](/static/files/IMAG0108.jpg)
+![Мой скромный обед в кофелайф, Виски и чизкейк.](http://macgera.s3.amazonaws.com/old-media/files/IMAG0108.jpg)
 
 Мой скромный обед в [кофелайф](http://coffeelife.com.ua/), Виски и чизкейк.
 
-![Какая-то замутка с квестами от Леши](/static/files/IMAG0113.jpg)
+![Какая-то замутка с квестами от Леши](http://macgera.s3.amazonaws.com/old-media/files/IMAG0113.jpg)
 
 Какая-то замутка с квестами от [Леши](https://twitter.com/#!/Crash_AT)
 
-![Это уже Афтепати, я с Карелиной](/static/files/Ao3cX8cCEAA0qBn.jpg)
+![Это уже Афтепати, я с Карелиной](http://macgera.s3.amazonaws.com/old-media/files/Ao3cX8cCEAA0qBn.jpg)
 
 Это уже Афтепати, я с [Карелиной](https://twitter.com/#!/karelina).
 
