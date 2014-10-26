@@ -1,0 +1,9 @@
+.posts {
+    .post {
+        margin-bottom: 1em;
+        border-bottom: 1px solid rgba(117, 117, 117, 0.4);
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        } // nth-last-child(1)
+    } // post
+} // posts
