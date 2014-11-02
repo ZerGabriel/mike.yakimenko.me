@@ -10,9 +10,9 @@ tags: [Социальная реклама, Общество]
     <div class="if"><iframe src="//player.vimeo.com/video/92996725" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 </figure>
 
-Банально не правда ли? Обычная *бытовуха* же. Но кто-то, где-то, в какой-то стране создает эту социальную рекламу. При чем это уже 2-й клевый ролик из Азии. 
+Банально не правда ли? Обычная *бытовуха* же. Но кто-то, где-то, в какой-то стране создает эту социальную рекламу. 
 
-Напомню об этом замечательном сюжете, или если кто не видел покажу.
+При чем это уже 2-й клевый ролик из Азии. Напомню об этом замечательном сюжете, или если кто не видел покажу.
 
 <figure>
     <div class="if"><iframe width="420" height="315" src="//www.youtube.com/embed/7s22HX18wDY" frameborder="0" allowfullscreen></iframe></div>
