@@ -74,6 +74,20 @@ h1, h2, h3, h4, h5 {
   margin: 0 0 40px 0;
 }
 
+.social-likes__widget {
+  background: #e3e8ec;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.social-likes__button {
+  color: #454545;
+}
+
+.social-likes__counter {
+  color: #454545;
+}
+
 body > header {
   margin: 1em 10% 1em 10%;
   text-align: center;
@@ -253,6 +267,56 @@ body > footer .copyrights:before {
 @media (min-width: 1200px) {
   .post {
     margin: 0 10% 0 10%;
+  }
+}
+.post aside {
+  text-align: center;
+  margin: 1em 0;
+}
+.post aside.post-add-desktop {
+  display: none;
+}
+@media (min-width: 480px) {
+  .post aside.post-add-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .post aside.post-add-desktop {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .post aside.post-add-desktop {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .post aside.post-add-desktop {
+    display: block;
+  }
+}
+.post aside.post-add-mobile {
+  display: block;
+}
+@media (min-width: 480px) {
+  .post aside.post-add-mobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .post aside.post-add-mobile {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .post aside.post-add-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .post aside.post-add-mobile {
+    display: none;
   }
 }
 .post header {

@@ -17,6 +17,40 @@
     @include bp(lg) {
         margin: 0 10% 0 10%;
     }
+    aside {
+        text-align: center;
+        margin: 1em 0;
+        &.post-add-desktop {
+            display: none;
+            @include bp(xs) {
+                display: none;
+            }
+            @include bp(sm) {
+                display: none;
+            }
+            @include bp(md) {
+                display: block;
+            }
+            @include bp(lg) {
+                display: block;
+            }
+        } // &.post-add-desktop
+        &.post-add-mobile {
+            display: block;
+            @include bp(xs) {
+                display: block;
+            }
+            @include bp(sm) {
+                display: block;
+            }
+            @include bp(md) {
+                display: none;
+            }
+            @include bp(lg) {
+                display: none;
+            }
+        } // &.post-add-desktop
+    } // aside
     header {
         text-align: center;
         h1 {
