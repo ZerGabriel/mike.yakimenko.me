@@ -4,6 +4,31 @@ body > header {
     padding-bottom: 1em;
     text-align: center;
     border-bottom: 1px solid rgba(117, 117, 117, 0.4);
+    &.in-post {
+        position: absolute;
+        z-index: 4;
+        box-sizing: border-box;
+        width: 100%;
+        border-bottom: none;
+        padding: 1em 10%;
+        margin: 0;
+        a {
+            color: #fff;
+        }
+        .title {
+            h2 {
+                a {
+                    color: #fff;
+                    } // a
+            } // h2
+            .social {
+                li a.icon {
+                    color: #fff;
+                    text-shadow: none;
+                } // a
+            } // social
+        } // title
+    } // in-post
     .portrait {
         width: 100px;
         margin: auto;
@@ -21,6 +46,16 @@ body > header {
     } // portrait
     .title {
         width: 100%;
+        @include bp(md) {
+            // width: calc(100% - 120px);
+            // width: auto;
+            @include inline-middle;
+        } // md
+        @include bp(lg) {
+            // width: calc(100% - 120px);
+            // width: auto;
+            @include inline-middle;
+        } // lg
         h2 {
             font-size: 1.4em;
             margin-top: 0;
