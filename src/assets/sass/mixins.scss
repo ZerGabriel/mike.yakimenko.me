@@ -35,6 +35,18 @@
     vertical-align: top;
 }
 
+// clearfix
+@mixin clearfix {
+    &:before,
+    &:after {
+        display: table;
+        content: ' ';
+    } // &:before, &:after
+    &:after {
+        clear: both;
+    }
+}
+
 @mixin bp($point) {
     $bp-xs: "(min-width : 480px)";
     $bp-sm: "(min-width : 768px)";

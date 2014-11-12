@@ -14,10 +14,6 @@
             box-sizing: border-box;
             padding: .2em .1em;
             list-style: none;
-            border-bottom: 1px solid rgba(63, 11, 11, .1);
-            &:nth-child(1) {
-                border-top: 1px solid rgba(63, 11, 11, .1);
-            } // &:nth-child(1)
             &:nth-last-child(1) {
                 border-bottom: none;
             } // &:nth-last-child(1)

@@ -1,81 +1,95 @@
 body > header {
-    margin: 1em 10% 1em 10%;
+    @include clearfix;
+    margin: 1em 10% 0em 10%;
+    padding-bottom: 1em;
     text-align: center;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.4);
     .portrait {
-        width: 8%;
+        width: 100px;
         margin: auto;
-        img {
-            max-width: 100%;
-            border-radius: 100%;
-            border: 3px solid white;
-        } // img
-    } // portrait
-    h2 {
-        font-size: 1.4em;
-        margin-top: 0;
-        margin-bottom: 0;
-        position: relative;
+        box-sizing: border-box;
         a {
-            color: $text-color;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            } // &:hover
+            display: inline-block;
+            padding: 6px;
+            img {
+                max-width: 100%;
+                border-radius: 100%;
+                border: 3px solid white;
+                // margin: 3px;
+            } // img
         } // a
-    } // h2
-    h3 {
-        font-size: 1em;
-        margin-top: 0;
-        margin-bottom: 0;
-    } // h3
-    ul {
-        margin: 0;
-        padding: 0;
-        li {
-            @include inline-middle;
+    } // portrait
+    .title {
+        width: 100%;
+        h2 {
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 0;
+            position: relative;
+            a {
+                color: $text-color;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                } // &:hover
+            } // a
+        } // h2
+        h3 {
+            font-size: 1em;
+            margin-top: 0;
+            margin-bottom: 0;
+        } // h3
+        ul {
+            margin: 0;
             padding: 0;
-            margin-left: -.3em;
-            &:after {
+            li {
                 @include inline-middle;
-                content: '\272A';
-                margin: 0 .4em;
-                font-size: .7em;
-                color: #C2C2C2;
-            } // &:after
-            &:nth-last-child(1) {
+                padding: 0;
+                margin-left: -.3em;
+                &:after {
+                    @include inline-middle;
+                    content: '\272A';
+                    margin: 0 .4em;
+                    font-size: .7em;
+                    color: #C2C2C2;
+                } // &:after
+                &:nth-child(1) {
+                    margin-left: 0em;
+                }
+                &:nth-last-child(1) {
+                    &:after {
+                        content: none;
+                    } // &:after
+                } // &:nth-last-child(1)
+                a {
+                    font-size: .8em;
+                } // a
+            } // li
+        } // ul
+        .social {
+            li {
+                margin-right: .5em;
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                } // &:nth-last-child(1)
                 &:after {
                     content: none;
                 } // &:after
-            } // &:nth-last-child(1)
-            a {
-                font-size: .8em;
-            } // a
-        } // li
-    } // ul
+                a.icon {
+                    @include inline-middle;
+                    box-sizing: border-box;
+                    width: 1.4em;
+                    height: 1.4em;
+                    line-height: 1;
+                    padding: .2em;
+                    color: #a3a3a3;
+                    text-shadow: 1px 1px 2px #fff;
+                    border-radius: 100%;
+                    &:hover {
+                        color: black;
+                    } // &:hover
+                } // a.icon
+            } // li
+        } // social
+    } // title
 } // body > header
-
-.social {
-    li {
-        margin-right: .5em;
-        &:nth-last-child(1) {
-            margin-right: 0;
-        } // &:nth-last-child(1)
-        &:after {
-            content: none;
-        } // &:after
-        a.icon {
-            @include inline-middle;
-            box-sizing: border-box;
-            width: 1.4em;
-            height: 1.4em;
-            line-height: 1;
-            padding: .2em;
-            color: #a3a3a3;
-            text-shadow: 1px 1px 2px #fff;
-            border-radius: 100%;
-            &:hover {
-                color: black;
-            } // &:hover
-        } // a.icon
-    } // li
-} // social
