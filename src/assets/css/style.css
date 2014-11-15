@@ -297,6 +297,9 @@ body > footer .copyrights:before {
   z-index: 2;
   width: 100%;
   bottom: 40%;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 .post-poster header h1 {
   font-size: 1.4em;
@@ -338,7 +341,7 @@ body > footer .copyrights:before {
   list-style: none;
 }
 .post-poster .scroll-down ul li {
-  margin-top: -12px;
+  margin-top: -22px;
   opacity: .2;
   font-weight: 200;
 }

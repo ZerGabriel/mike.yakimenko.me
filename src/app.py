@@ -100,15 +100,6 @@ def archive():
     pages = get_posts()
     return render_template('archive.html', pages=pages, years = years)
 
-
-# dev
-@app.route('/geek/', defaults={'page': 1})
-@app.route('/geek/page/<int:page>/')
-def geek_index(page):
-    pages = get_geeks()[(page-1)*PER_PAGE:PER_PAGE*page]
-    pagination = Pagination(page, PER_PAGE, len(get_geeks()))
-    return render_template('geek_index.html', pages = pages, pagination = pagination, section = 'index')
-
 # single page
 @app.route('/<path:path>/')
 def page(path):
@@ -116,8 +107,6 @@ def page(path):
     page = pages.get_or_404(path)
     if section == 'blog':
         template = 'post.html'
-    if section == 'geek':
-        template = 'geek_post.html'
     if section == 'page':
         template = 'page.html'
     return render_template(template, page = page)
