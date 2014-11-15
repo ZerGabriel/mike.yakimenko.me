@@ -7,9 +7,19 @@
 
     // header in post
     function headerInPost() {
+        var Poster = $('[data-role="post-poster"]');
         var headerInPost = $('[data-role="in-post-poster"]');
         var windowHeight = $(window).height();
-        headerInPost.css('bottom', windowHeight*.3);
+        var scrollDown = Poster.find('.scroll-down');
+        headerInPost.css('bottom', windowHeight*.4);
+
+        if (windowHeight < 500) {
+            headerInPost.css('bottom', 20);
+            scrollDown.hide();
+        } else {
+            headerInPost.css('bottom', windowHeight*.4);
+            scrollDown.show();
+        }
     }
 
     // document ready
