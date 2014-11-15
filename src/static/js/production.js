@@ -9206,6 +9206,12 @@ return jQuery;
         var scrollDown = Poster.find('.scroll-down');
         headerInPost.css('bottom', windowHeight*.4);
 
+        if (windowHeight < 300) {
+            Poster.addClass('min-height');
+        } else {
+            Poster.removeClass('min-height');
+        }
+
         if (windowHeight < 500) {
             headerInPost.css('bottom', 20);
             scrollDown.hide();
