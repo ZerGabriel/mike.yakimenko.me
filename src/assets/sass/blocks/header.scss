@@ -21,12 +21,6 @@ body > header {
                     color: #fff;
                 } // a
             } // h2
-            .social {
-                li a.icon {
-                    color: #fff;
-                    text-shadow: none;
-                } // a
-            } // social
         } // title
     } // in-post
     .portrait {
@@ -101,30 +95,5 @@ body > header {
                 } // a
             } // li
         } // ul
-        .social {
-            li {
-                margin-right: .5em;
-                &:nth-last-child(1) {
-                    margin-right: 0;
-                } // &:nth-last-child(1)
-                &:after {
-                    content: none;
-                } // &:after
-                a.icon {
-                    @include inline-middle;
-                    box-sizing: border-box;
-                    width: 1.4em;
-                    height: 1.4em;
-                    line-height: 1;
-                    padding: .2em;
-                    color: #a3a3a3;
-                    text-shadow: 1px 1px 2px #fff;
-                    border-radius: 100%;
-                    &:hover {
-                        color: black;
-                    } // &:hover
-                } // a.icon
-            } // li
-        } // social
     } // title
 } // body > header

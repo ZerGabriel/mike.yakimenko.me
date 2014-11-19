@@ -53,3 +53,32 @@
 .social-likes__counter {
     color: #454545;
 } // social-likes__counter
+
+ul.social {
+    padding: 0;
+    text-align: center;
+    li {
+        @include inline-middle;
+        margin-right: .5em;
+        &:nth-last-child(1) {
+            margin-right: 0;
+        } // &:nth-last-child(1)
+        &:after {
+            content: none;
+        } // &:after
+        a.icon {
+            @include inline-middle;
+            box-sizing: border-box;
+            width: 1.4em;
+            height: 1.4em;
+            line-height: 1;
+            padding: .2em;
+            color: #a3a3a3;
+            text-shadow: 1px 1px 2px #fff;
+            border-radius: 100%;
+            &:hover {
+                color: black;
+            } // &:hover
+        } // a.icon
+    } // li
+} // social

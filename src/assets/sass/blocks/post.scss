@@ -21,7 +21,7 @@
         @include transition(all, 0.3s, ease);
         h1 {
             font-size: 1.4em;
-            margin: 0;
+            margin: 0 5%;
             a {
                 color: #fff;
                 text-decoration: none;
@@ -31,6 +31,12 @@
                     background: none;
                 } // &:hover
             } // a
+            @include bp(md) {
+                font-size: 1.8em;
+            } // md
+            @include bp(lg) {
+                font-size: 1.8em;
+            } // lg
         } // h1
         .meta {
             color: #fff;
@@ -137,6 +143,12 @@
                     background: none;
                 } // &:hover
             } // a
+            @include bp(md) {
+                font-size: 1.8em;
+            } // md
+            @include bp(lg) {
+                font-size: 1.8em;
+            } // lg
         } // h1
     } // header
     article {

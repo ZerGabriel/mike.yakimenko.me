@@ -21,6 +21,7 @@
   }
 }
 body {
+  font-size: 1.125rem;
   line-height: 150%;
   background: #fff;
   font-family: Georgia, serif;
@@ -28,16 +29,6 @@ body {
   color: #303030;
   padding: 0;
   margin: 0;
-}
-@media (min-width: 480px) {
-  body {
-    font-size: 1.125rem;
-  }
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 1.125rem;
-  }
 }
 @media (min-width: 992px) {
   body {
@@ -131,6 +122,40 @@ h1, h2, h3, h4, h5 {
   color: #454545;
 }
 
+ul.social {
+  padding: 0;
+  text-align: center;
+}
+ul.social li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .5em;
+}
+ul.social li:nth-last-child(1) {
+  margin-right: 0;
+}
+ul.social li:after {
+  content: none;
+}
+ul.social li a.icon {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1;
+  padding: .2em;
+  color: #a3a3a3;
+  text-shadow: 1px 1px 2px #fff;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+ul.social li a.icon:hover {
+  color: black;
+}
+
 body > header {
   margin: 1em 10% 0em 10%;
   padding-bottom: 1em;
@@ -160,10 +185,6 @@ body > header.in-post a {
 }
 body > header.in-post .title h2 a {
   color: #fff;
-}
-body > header.in-post .title .social li a.icon {
-  color: #fff;
-  text-shadow: none;
 }
 body > header .portrait {
   width: 100px;
@@ -241,33 +262,6 @@ body > header .title ul li:nth-last-child(1):after {
 }
 body > header .title ul li a {
   font-size: .8em;
-}
-body > header .title .social li {
-  margin-right: .5em;
-}
-body > header .title .social li:nth-last-child(1) {
-  margin-right: 0;
-}
-body > header .title .social li:after {
-  content: none;
-}
-body > header .title .social li a.icon {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 1.4em;
-  height: 1.4em;
-  line-height: 1;
-  padding: .2em;
-  color: #a3a3a3;
-  text-shadow: 1px 1px 2px #fff;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
-}
-body > header .title .social li a.icon:hover {
-  color: black;
 }
 
 body > footer {
@@ -360,7 +354,7 @@ body > footer .copyrights:before {
 }
 .post-poster header h1 {
   font-size: 1.4em;
-  margin: 0;
+  margin: 0 5%;
 }
 .post-poster header h1 a {
   color: #fff;
@@ -370,6 +364,16 @@ body > footer .copyrights:before {
   color: #fff;
   text-decoration: underline;
   background: none;
+}
+@media (min-width: 992px) {
+  .post-poster header h1 {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 1200px) {
+  .post-poster header h1 {
+    font-size: 1.8em;
+  }
 }
 .post-poster header .meta {
   color: #fff;
@@ -509,6 +513,16 @@ body > footer .copyrights:before {
   color: #2980b9;
   text-decoration: underline;
   background: none;
+}
+@media (min-width: 992px) {
+  .post header h1 {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 1200px) {
+  .post header h1 {
+    font-size: 1.8em;
+  }
 }
 .post article h2, .post article h3, .post article h4, .post article h5 {
   color: #358340;
