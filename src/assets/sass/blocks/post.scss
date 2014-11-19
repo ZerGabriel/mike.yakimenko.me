@@ -54,9 +54,10 @@
         ul {
             @include clear-list;
             li {
-                margin-top: -22px;
+                margin-top: rem(-4);
                 opacity: .2;
                 font-weight: 200;
+                line-height: 1;
                 &:nth-child(1) {
                     animation: ScrollDown 4s infinite 0s;
                 }
