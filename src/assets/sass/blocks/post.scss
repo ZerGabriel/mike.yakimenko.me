@@ -196,7 +196,21 @@
         .if {
             margin-bottom: 1em;
         } // if
-        .mediadesc {
+        .pics-group {
+            margin-bottom: 1em;
+            @include table;
+            .pic {
+                @include table-cell;
+                padding: .5em;
+                &:nth-child(1) {
+                    padding-left: 0;
+                }
+                &:nth-last-child(1) {
+                    padding-right: 0;
+                }
+            } // .pic
+        } // pics-group
+        .mediadesc, .mdesc {
             text-align: center;
             font-style: italic;
             margin-top: 0;
