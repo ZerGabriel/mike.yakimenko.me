@@ -47,6 +47,19 @@
     }
 }
 
+@mixin table {
+    table-layout: fixed;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@mixin table-cell {
+    display: table-cell;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
 @mixin bp($point) {
     $bp-xs: "(min-width : 480px)";
     $bp-sm: "(min-width : 768px)";

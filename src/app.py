@@ -15,7 +15,6 @@ FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'content'
 POSTS_DIR = 'blog'
 PAGES_DIR = 'page'
-GEEKS_DIR = 'geek'
 PER_PAGE = 5
 FEED_MAX_LINKS = 5
 
@@ -63,11 +62,6 @@ def get_taget(posts_list, tag):
 def get_posts():
     blog = [p for p in pages if p.path.startswith(POSTS_DIR)]
     posts = sorted_posts(blog)
-    return posts
-
-def get_geeks():
-    geeks = [p for p in pages if p.path.startswith(GEEKS_DIR)]
-    posts = sorted_posts(geeks)
     return posts
 
 def get_years(pages):

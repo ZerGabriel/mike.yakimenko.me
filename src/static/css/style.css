@@ -564,7 +564,30 @@ body > footer .copyrights:before {
 .post article .if {
   margin-bottom: 1em;
 }
-.post article .mediadesc {
+.post article .pics-group {
+  margin-bottom: 1em;
+  table-layout: fixed;
+  display: table;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.post article .pics-group .pic {
+  display: table-cell;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: .5em;
+}
+.post article .pics-group .pic:nth-child(1) {
+  padding-left: 0;
+}
+.post article .pics-group .pic:nth-last-child(1) {
+  padding-right: 0;
+}
+.post article .mediadesc, .post article .mdesc {
   text-align: center;
   font-style: italic;
   margin-top: 0;
