@@ -4,6 +4,9 @@
 <!-- posts -->
 <section class="posts">
     {% for page in pages %}
+    {% if page.meta.poster %}
+    <div class="post-poster" data-role="post-poster" style="background: url({{ page.meta.poster }});"></div>
+    {% endif %}
     <!-- post -->
     <div class="post">
         <header>

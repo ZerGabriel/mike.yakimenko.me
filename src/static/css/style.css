@@ -20,14 +20,7 @@
     opacity: .2;
   }
 }
-html {
-  height: 100%;
-  max-height: 100%;
-}
-
 body {
-  height: 100%;
-  max-height: 100%;
   font-size: 1.125rem;
   line-height: 150%;
   background: #fff;
@@ -337,7 +330,7 @@ body > footer .copyrights:before {
   -webkit-background-size: cover !important;
           background-size: cover !important;
   background-position: center center !important;
-  height: 65%;
+  height: 65vh;
   min-height: 180px;
 }
 
