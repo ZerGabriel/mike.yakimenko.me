@@ -30,14 +30,14 @@
 
     // document ready
     $(document).ready(function() {
-        screenSize('[data-role="post-poster"]');
-        headerInPost();
+        // screenSize('[data-role="post-poster"]');
+        // headerInPost();
     });
 
     // all initial on window resize
     $(window).on('resize', function() {
-        screenSize('[data-role="post-poster"]');
-        headerInPost();
+        // screenSize('[data-role="post-poster"]');
+        // headerInPost();
     });
 
 
