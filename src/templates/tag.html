@@ -2,6 +2,10 @@
 
 {% block title %}Записи с тэгом {{ tag }} - {% endblock title %}
 
+{% block home_link %}
+<a href="{{ url_for("index") }}" class="home"></a>
+{% endblock %}
+
 {% block content %}
 <!-- posts_list -->
 <section class="posts-list">

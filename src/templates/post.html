@@ -2,7 +2,9 @@
 
 {% block title %}{{ page.title }} - {% endblock title %}
 
-{% block header_class %}{% if page.meta.poster %}in-post{% endif %}{% endblock %}
+{% block home_link %}
+<a href="{{ url_for("index") }}" class="home"></a>
+{% endblock %}
 
 {% block content %}
 {% if page.meta.poster %}

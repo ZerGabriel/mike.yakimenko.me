@@ -75,7 +75,7 @@ def get_years(pages):
 def index(page):
     pages = get_posts()[(page-1)*PER_PAGE:PER_PAGE*page]
     pagination = Pagination(page, PER_PAGE, len(get_posts()))
-    return render_template('index.html', pages = pages, pagination = pagination, section = 'index')
+    return render_template('index.html', pages = pages, pagination = pagination, page = page, section = 'index')
 
 @app.route('/tag/<string:tag>/')
 def tag(tag):

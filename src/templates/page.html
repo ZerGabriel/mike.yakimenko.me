@@ -2,6 +2,10 @@
 
 {% block title %}{{ page.title }} - {% endblock title %}
 
+{% block home_link %}
+<a href="{{ url_for("index") }}" class="home"></a>
+{% endblock %}
+
 {% block content %}
 <!-- post -->
 <section class="post">
