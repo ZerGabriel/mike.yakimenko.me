@@ -465,6 +465,10 @@ body > footer .copyrights:before {
   height: 100vh;
   display: table;
 }
+.post-poster.in-feed {
+  display: block;
+  height: 65vh;
+}
 .post-poster .poster-content {
   width: 100%;
   display: table-cell;
