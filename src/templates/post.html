@@ -8,10 +8,33 @@
 
 {% block content %}
 {% if page.meta.poster %}
-<div class="post-poster" data-role="post-poster" style="background: url({{ page.meta.poster }});"></div>
+<div class="post-poster" data-role="post-poster" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url({{ page.meta.poster }});">
+    <div class="poster-content">
+        <header>
+            <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
+            <div class="meta">
+                <i class="fa fa-clock-o"></i> {{ page.date }}
+                {% if page.meta.tags|length %}
+                    <i class="fa fa-tags"></i> 
+                    {% for page_tag in page.meta.tags %}
+                        <a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a>{% if loop.last %}{% else %}, {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </header>
+        <div class="scroll-down">
+            <ul>
+                <li><i class="fa fa-chevron-down"></i></li>
+                <li><i class="fa fa-chevron-down"></i></li>
+                <li><i class="fa fa-chevron-down"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
 {% endif %}
 <!-- post -->
 <section class="post">
+    {% if not page.meta.poster %}
     <header>
         <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
         <div class="meta">
@@ -24,6 +47,7 @@
             {% endif %}
         </div>
     </header>
+    {% endif %}
     <article>
        {{ page.html|safe }}
     </article>

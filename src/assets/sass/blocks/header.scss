@@ -121,6 +121,8 @@ body > header {
     color: #000;
     text-decoration: none;
 
+    cursor: pointer;
+
     &:after {
         content: '\f0c9';
     } // &:after

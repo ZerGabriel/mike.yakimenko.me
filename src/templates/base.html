@@ -35,24 +35,16 @@
 </head>
 <body>
 
-<!-- header -->
-<!-- <header class="{% block header_class %}{% endblock %}">
-    <div class="portrait">
-      <a href="{{ url_for("index") }}"><img src="http://macgera.s3.amazonaws.com/mg-avatar.jpg" alt=""></a>
-    </div>
-    <div class="title">
-        <h2><a href="{{ url_for("index") }}">Блог Михаила Якименко</a></h2>
-        <ul>
-            <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
-            <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
-            <li><a href="{{ url_for("page", path="feed") }}">RSS</a></li>
-        </ul>
-    </div>
-</header> -->
-<!-- /header -->
+<div class="main-menu" data-role="menu">
+    <ul>
+        <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
+        <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
+        <li><a href="{{ url_for("page", path="feed") }}">RSS</a></li>
+    </ul>
+</div>
 
 {% block home_link %}{% endblock %}
-<div class="menu-bars"></div>
+<div class="menu-bars" data-role="menu-trigger"></div>
 
 {% block content %}
 {% endblock content %}

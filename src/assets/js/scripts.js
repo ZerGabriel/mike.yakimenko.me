@@ -28,10 +28,33 @@
         }
     }
 
+    function stateCheck(elem, clName) {
+        $el = elem;
+        $clName = clName
+        if (!$el.hasClass(clName)) {
+            $el.addClass(clName);
+        } else {
+            $el.removeClass(clName);
+        }
+    }
+
+    function mainMenu() {
+        var trigger = $('[data-role="menu-trigger"]');
+        var menu = $('[data-role="menu"]');
+        var body = $('body');
+
+        trigger.click(function() {
+            stateCheck(menu, 'active');
+            stateCheck(body, 'open-menu');
+        });
+    }
+
     // document ready
-    $(document).ready(function() {
+    $(window).on('load', function() {
         // screenSize('[data-role="post-poster"]');
         // headerInPost();
+        mainMenu()
+        $('[data-role="post-poster"]').colorcontrast();
     });
 
     // all initial on window resize
