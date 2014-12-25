@@ -9237,6 +9237,7 @@ return jQuery;
         var body = $('body');
 
         trigger.click(function() {
+            $(this).toggleClass('active');
             stateCheck(menu, 'active');
             stateCheck(body, 'open-menu');
         });
