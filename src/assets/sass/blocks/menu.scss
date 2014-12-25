@@ -6,7 +6,7 @@
     z-index: 999;
     top: 0px;
     left: 0px;
-    background: rgba(0,0,0, .8);
+    background: rgba(255,255,255, 1);
     display: none;
     z-index: 200;
     color: #fff;
@@ -23,7 +23,7 @@
             } // li
             a {
                 display: block;
-                color: #fff;
+                color: #3498db;
                 text-decoration: none;
                 font-size: 1.5em;
                 padding: .4em .6em;
