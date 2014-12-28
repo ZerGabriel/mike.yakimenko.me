@@ -8,7 +8,7 @@
 
 {% block content %}
 {% if page.meta.poster %}
-<div class="post-poster" data-role="post-poster" style="background: url({{ page.meta.poster }});">
+<div class="post-poster" data-role="post-poster" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url({{ page.meta.poster }});">
     <div class="poster-content">
         <header>
             <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
@@ -26,7 +26,7 @@
 </div>
 {% endif %}
 <!-- post -->
-<section class="post {% if page.meta.poster %}with-poster{% endif %}">
+<section class="post">
     {% if not page.meta.poster %}
     <header>
         <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
