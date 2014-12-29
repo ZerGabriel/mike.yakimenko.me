@@ -1,5 +1,5 @@
 title: Минусы Черногории которые я заметил
-date: 2014-12-02
+date: 2014-12-02 12:00:00
 tags: [Черногория, Глобализация, Европа, Деньги, Путешествия]
 poster: http://macgera.s3.amazonaws.com/articles/negative-monte.jpg
 

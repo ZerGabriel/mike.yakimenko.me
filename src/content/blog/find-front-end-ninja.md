@@ -1,5 +1,5 @@
 title: Найти html/css разработчика
-date: 2012-10-30
+date: 2012-10-30 12:00:00
 type: blog
 tags: [css, html, Работа]
 

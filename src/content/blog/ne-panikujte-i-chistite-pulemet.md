@@ -1,5 +1,5 @@
 title: Не паникуйте и чистите пулемет
-date: 2014-08-29
+date: 2014-08-29 12:00:00
 tags: [Украина, Война]
 poster: http://macgera.s3.amazonaws.com/old-media/images/13994572513_aba5fffdbe_k.jpg
 

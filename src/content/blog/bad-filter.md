@@ -1,5 +1,5 @@
 title: Плохой фильтр
-date: 2012-11-14
+date: 2012-11-14 12:00:00
 type: blog
 tags: [ux]
 

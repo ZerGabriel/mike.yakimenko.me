@@ -1,5 +1,5 @@
 title: Facebook становится прекрасным
-date: 2014-02-09
+date: 2014-02-09 12:00:00
 tags: [Facebook, интернет, Видео]
 
 Еще недавно Facebook выпустил [Paper](https://www.facebook.com/paper), и мне этот продукт понравился. А сегодня я тут наткнулся на другую интересную штуковину – [Look Back](https://www.facebook.com/lookback). 

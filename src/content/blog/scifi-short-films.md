@@ -1,5 +1,5 @@
 title: Несколько Sci Fi короткометражек
-date: 2013-12-17
+date: 2013-12-17 12:00:00
 type: blog
 tags: [Кино, Sci-Fi]
 

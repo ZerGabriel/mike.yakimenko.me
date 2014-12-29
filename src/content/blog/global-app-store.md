@@ -1,5 +1,5 @@
 title: Глобальный AppStore
-date: 2012-02-26
+date: 2012-02-26 12:00:00
 type: blog
 tags: [Программы, ОС]
 

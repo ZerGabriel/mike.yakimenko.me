@@ -1,5 +1,5 @@
 title: Парк на воде где нибудь в Оболоне
-date: 2014-11-15
+date: 2014-11-15 12:00:00
 tags: [Украина, Парк, Идеи]
 poster: http://macgera.s3.amazonaws.com/articles/inokashira-park2.jpg
 

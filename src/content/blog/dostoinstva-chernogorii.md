@@ -1,5 +1,5 @@
 title: Достоинства Черногории
-date: 2014-12-05
+date: 2014-12-05 12:00:00
 tags: [Черногория, Глобализация, Европа, Люди, Природа]
 poster: http://macgera.s3.amazonaws.com/articles/montenegro-view.jpg
 

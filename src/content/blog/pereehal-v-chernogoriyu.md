@@ -1,5 +1,5 @@
 title: Переехал в Черногорию
-date: 2014-09-19
+date: 2014-09-19 12:00:00
 tags: [Черногория, Путешествия, Глобализация]
 poster: http://macgera.s3.amazonaws.com/old-media/images/IMG_20140913_122531.jpg
 

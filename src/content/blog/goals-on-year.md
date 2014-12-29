@@ -1,5 +1,5 @@
 title: Цели на год
-date: 2014-12-25
+date: 2014-12-25 12:00:00
 tags: [Цели, Развитие, Жизнь, Философия]
 poster: http://macgera.s3.amazonaws.com/articles/tasks.jpg
 

@@ -1,5 +1,5 @@
 title: Новое перерождение блога
-date: 2013-04-23
+date: 2013-04-23 12:00:00
 type: blog
 tags: [Блог, Python, github, git, markdown]
 
