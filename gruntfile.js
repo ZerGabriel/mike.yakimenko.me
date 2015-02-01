@@ -80,6 +80,13 @@ module.exports = function(grunt) {
                         dest: 'src/static/css/',
                         filter: 'isFile'
                     },
+                    {
+                        expand: true, 
+                        cwd: 'bower_components/fontawesome/css',
+                        src: ['font-awesome.min.css'], 
+                        dest: 'src/static/css/',
+                        filter: 'isFile'
+                    },
                 ],
             },
         },
