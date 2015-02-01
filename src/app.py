@@ -111,16 +111,13 @@ def page(path):
 def error403():
     return render_template('403.html')
 
-
 @app.route('/404.html')
 def error404():
     return render_template('404.html')
 
-
 @app.route('/500.html')
 def error500():
     return render_template('500.html')
-
 
 @app.errorhandler(404)
 def page_not_found(error):
@@ -134,7 +131,6 @@ def make_external(url):
 def pages_frozen():
     for page in pages:
         yield '/%s/' % page.path
-
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
