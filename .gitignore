@@ -1,8 +1,14 @@
+# basics
 *.pyc
-app/build
-req_draft.txt
 .sass-cache
-html/css
 .DS_Store
 node_modules
+bower_components
+
+# site
 production
+
+
+# assets
+src/static/*
+!src/static/fonts
