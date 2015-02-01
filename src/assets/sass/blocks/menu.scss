@@ -11,12 +11,20 @@
     z-index: 200;
     color: #fff;
     text-align: center;
+    .menu-in-wrapper {
+        @include table;
+        .menu-in {
+            @include table-cell;
+            height: 100vh;
+            vertical-align: middle;
+            overflow-y: scroll;
+        } // menu-in
+    } // menu-in-wrapper
     &.active {
         display: block;
     } // &.active
     ul {
         @include clear-list;
-        margin-top: 1.5em;
         li {
             + li {
                 margin-top: 1.5em;

@@ -36,11 +36,15 @@
 <body>
 
 <div class="main-menu" data-role="menu">
-    <ul>
-        <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
-        <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
-        <li><a href="{{ url_for("page", path="feed") }}">RSS</a></li>
-    </ul>
+    <div class="menu-in-wrapper">
+        <div class="menu-in">
+            <ul>
+                <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
+                <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
+                <li><a href="{{ url_for("page", path="rss") }}">RSS</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 {% block home_link %}{% endblock %}

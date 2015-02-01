@@ -202,3 +202,13 @@
         } // social
     } // footer
 } // post
+
+.all-posts {
+    text-align: center;
+    .all-posts-link {
+        font-size: 2em;
+        text-decoration: none;
+        font-style: italic;
+        color: #494949;
+    } //all-posts-link
+} // all-posts

@@ -32,12 +32,6 @@ app.config.from_object(__name__)
 pages = FlatPages(app)
 freezer = Freezer(app)
 
-# templatetags
-def url_for_other_page(page):
-    args = request.view_args.copy()
-    args['page'] = page
-    return url_for(request.endpoint, **args)
-
 def dateformat(value, format='%Y-%m-%d'):
     return value.strftime(format)
 
@@ -46,12 +40,12 @@ def timeformat(value, format='%H:%M'):
 
 app.jinja_env.filters['dateformat'] = dateformat
 app.jinja_env.filters['timeformat'] = timeformat
-app.jinja_env.globals['url_for_other_page'] = url_for_other_page
 
 # functions
 def sorted_posts(posts_list):
     return sorted(posts_list, reverse=True, key=lambda p: p.meta['date'])
 
+# get tags
 def get_tags():
     z = (i.meta['tags'] for i in get_posts())
     f = []
@@ -61,6 +55,7 @@ def get_tags():
     tags = sorted(set(f))
     return tags
 
+# get tagged posts
 def get_taget(posts_list, tag):
     tagged = [p for p in posts_list if tag in p.meta.get('tags', [])]
     tagged = sorted_posts(tagged)
@@ -78,19 +73,17 @@ def get_years(pages):
     return years
 
 # views
-@app.route('/', defaults={'page': 1})
-@app.route('/page/<int:page>/')
-def index(page):
-    pages = get_posts()[(page-1)*PER_PAGE:PER_PAGE*page]
-    pagination = Pagination(page, PER_PAGE, len(get_posts()))
-    return render_template('index.html', pages = pages, pagination = pagination, page = page, section = 'index')
+@app.route('/')
+def index():
+    page = get_posts()[0]
+    return render_template('index.html', page = page)
 
 @app.route('/tag/<string:tag>/')
 def tag(tag):
     posts = get_posts()
     return render_template('tag.html', pages = get_taget(posts, tag), tag = tag)
 
-@app.route('/feed/')
+@app.route('/rss/')
 def feed(): 
     pages = get_posts()[:FEED_MAX_LINKS]
     now = datetime.now()
@@ -134,7 +127,6 @@ def page_not_found(error):
     return render_template('404.html'), 404
 
 # freezer
-
 def make_external(url):
     return urljoin(request.url_root, url)
 
