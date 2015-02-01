@@ -1,0 +1,14 @@
+{
+  "name": "macgera.name",
+  "description": "Michael Yakimenko blog",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  },
+  "devDependencies": {
+    "social-likes": "~3.0.12",
+    "jquery": "~2.1.3",
+    "normalize.css": "~3.0.2"
+  }
+}
