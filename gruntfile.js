@@ -87,6 +87,13 @@ module.exports = function(grunt) {
                         dest: 'src/static/css/',
                         filter: 'isFile'
                     },
+                    {
+                        expand: true, 
+                        cwd: 'bower_components/jquery/dist',
+                        src: ['jquery.min.map'], 
+                        dest: 'src/static/js/',
+                        filter: 'isFile'
+                    },
                 ],
             },
         },
