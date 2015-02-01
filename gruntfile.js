@@ -131,7 +131,7 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('build', ['concat', 'uglify', 'imagemin', 'sass', 'autoprefixer', 'cssmin']);
+    grunt.registerTask('build', ['copy', 'concat', 'uglify', 'imagemin', 'sass', 'autoprefixer', 'cssmin']);
     grunt.registerTask('run', ['copy', 'concat', 'imagemin', 'sass', 'autoprefixer', 'watch']);
     grunt.registerTask('default', ['run'])
 
