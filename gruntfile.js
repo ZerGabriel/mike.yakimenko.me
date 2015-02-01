@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                     compass: false
                 },
                 files: {
-                    'assets/css/style.css': 'assets/sass/style.scss'
+                    'src/assets/css/style.css': 'src/assets/sass/style.scss'
                 }
             }
         },
@@ -21,15 +21,15 @@ module.exports = function(grunt) {
             multiple_files: {
                 expand: true,
                 flatten: true,
-                src: 'assets/css/*.css',
-                dest: 'static/css/'
+                src: 'src/assets/css/*.css',
+                dest: 'src/static/css/'
             }
         },
 
         cssmin: {
             combine: {
                 files: {
-                    'static/css/style.min.css': ['static/css/style.css']
+                    'src/static/css/style.min.css': ['src/static/css/style.css']
                 }
             }
         },
@@ -37,18 +37,18 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-                    'assets/js/libs/jquery.js',
-                    'assets/js/libs/social-likes.min.js',
-                    'assets/js/scripts.js'
+                    'bower_components/jquery/dist/jquery.min.js',
+                    'bower_components/social-likes/social-likes.min.js',
+                    'src/assets/js/scripts.js'
                 ],
-                dest: 'static/js/production.js',
+                dest: 'src/static/js/production.js',
             }
         },
 
         uglify: {
             build: {
-                src: 'static/js/production.js',
-                dest: 'static/js/production.min.js',
+                src: 'src/static/js/production.js',
+                dest: 'src/static/js/production.min.js',
             }
         },
 
@@ -56,11 +56,32 @@ module.exports = function(grunt) {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: 'assets/images/',
+                    cwd: 'src/assets/images/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'static/images/'
+                    dest: 'src/static/images/'
                 }]
             }
+        },
+
+        copy: {
+            main: {
+                files: [
+                    {
+                        expand: true, 
+                        cwd: 'bower_components/social-likes',
+                        src: ['social-likes_flat.css'], 
+                        dest: 'src/static/css/',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true, 
+                        cwd: 'bower_components/normalize.css',
+                        src: ['normalize.css'], 
+                        dest: 'src/static/css/',
+                        filter: 'isFile'
+                    },
+                ],
+            },
         },
 
         watch: {
@@ -68,14 +89,14 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             scripts: {
-                files: ['assets/js/*.js'],
+                files: ['src/assets/js/*.js'],
                 tasks: ['concat'],
                 options: {
                     spawn: false,
                 }
             },
             css: {
-                files: ['assets/sass/*.scss', 'assets/sass/*/*.scss'],
+                files: ['src/assets/sass/*.scss', 'src/assets/sass/*/*.scss'],
                 tasks: ['sass', 'autoprefixer'],
                 options: {
                     spawn: false,
@@ -83,11 +104,11 @@ module.exports = function(grunt) {
                 }
             },
             autoprefixer: {
-                files: 'assets/css/**',
+                files: 'src/assets/css/**',
                 tasks: ['autoprefixer']
             },
             images: {
-                files: ['assets/images/*.{png,jpg,gif}'],
+                files: ['src/assets/images/*.{png,jpg,gif}'],
                 tasks: ['imagemin'],
             }
         },
@@ -97,7 +118,7 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     grunt.registerTask('build', ['concat', 'uglify', 'imagemin', 'sass', 'autoprefixer', 'cssmin']);
-    grunt.registerTask('run', ['concat', 'imagemin', 'sass', 'autoprefixer', 'watch']);
+    grunt.registerTask('run', ['copy', 'concat', 'imagemin', 'sass', 'autoprefixer', 'watch']);
     grunt.registerTask('default', ['run'])
 
 };
