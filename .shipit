@@ -5,7 +5,5 @@ path='projects/macgera'
 git checkout master
 git pull
 source ~/.envs/macgera/bin/activate
-npm install
-bower install
 grunt build
 ./src/app.py build
