@@ -82,16 +82,16 @@ module.exports = function(grunt) {
                     },
                     {
                         expand: true,
-                        cwd: 'bower_components/fontawesome/css',
-                        src: ['font-awesome.min.css'],
-                        dest: 'src/static/css/',
+                        cwd: 'bower_components/fontawesome/fonts',
+                        src: ['*'],
+                        dest: 'src/static/fonts/',
                         filter: 'isFile'
                     },
                     {
                         expand: true,
-                        cwd: 'bower_components/jquery/dist',
-                        src: ['jquery.min.map'],
-                        dest: 'src/static/js/',
+                        cwd: 'bower_components/fontawesome/css',
+                        src: ['font-awesome.min.css'],
+                        dest: 'src/static/css/',
                         filter: 'isFile'
                     },
                 ],
