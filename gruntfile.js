@@ -67,30 +67,30 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     {
-                        expand: true, 
+                        expand: true,
                         cwd: 'bower_components/social-likes',
-                        src: ['social-likes_flat.css'], 
+                        src: ['social-likes_flat.css'],
                         dest: 'src/static/css/',
                         filter: 'isFile'
                     },
                     {
-                        expand: true, 
+                        expand: true,
                         cwd: 'bower_components/normalize.css',
-                        src: ['normalize.css'], 
+                        src: ['normalize.css'],
                         dest: 'src/static/css/',
                         filter: 'isFile'
                     },
                     {
-                        expand: true, 
+                        expand: true,
                         cwd: 'bower_components/fontawesome/css',
-                        src: ['font-awesome.min.css'], 
+                        src: ['font-awesome.min.css'],
                         dest: 'src/static/css/',
                         filter: 'isFile'
                     },
                     {
-                        expand: true, 
+                        expand: true,
                         cwd: 'bower_components/jquery/dist',
-                        src: ['jquery.min.map'], 
+                        src: ['jquery.min.map'],
                         dest: 'src/static/js/',
                         filter: 'isFile'
                     },
@@ -131,8 +131,8 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('build', ['copy', 'concat', 'uglify', 'imagemin', 'sass', 'autoprefixer', 'cssmin']);
-    grunt.registerTask('run', ['copy', 'concat', 'imagemin', 'sass', 'autoprefixer', 'watch']);
+    grunt.registerTask('build', ['copy', 'concat', 'imagemin', 'sass', 'autoprefixer', 'uglify', 'cssmin']);
+    grunt.registerTask('run', ['copy', 'concat', 'imagemin', 'sass', 'autoprefixer', 'uglify', 'cssmin', 'watch']);
     grunt.registerTask('default', ['run'])
 
 };
