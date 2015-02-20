@@ -62,8 +62,8 @@
 
 @mixin bp($point) {
     $bp-xs: "(min-width : 480px)";
-    $bp-sm: "(min-width : 768px)";
-    $bp-md: "(min-width : 992px)";
+    $bp-sm: "(min-width : 768px) and (max-width : 992px)";
+    $bp-md: "(min-width : 992px) and (max-width : 1200px)";
     $bp-lg: "(min-width : 1200px)";
 
     @if $point == xs {
