@@ -3,9 +3,9 @@ date: 2015-01-03 19:40:44
 tags: [Ялта, Крым, Украина, Фотографии, Путешествия]
 poster: http://macgera.s3.amazonaws.com/articles/yalta-walk/vawe-come.jpg
 
-В прошлом году, не за долго до оккупации Крыма, я побывал в Ялте. Это была вполне себе обычная поездка в привычный Крым. Которому я симпатизировал, который я наверное любил.
+В прошлом году, незадолго до оккупации Крыма, я побывал в Ялте. Это была вполне себе обычная поездка в привычный Крым, которому я симпатизировал, который я наверное любил.
 
-Немного фоток из Крыма марта 2014.
+Немного фоток из Крыма 19-20 февраля 2014.
 
 ![](http://macgera.s3.amazonaws.com/articles/yalta-walk/yalta-IMG_5867.jpg)
 
@@ -49,7 +49,7 @@ poster: http://macgera.s3.amazonaws.com/articles/yalta-walk/vawe-come.jpg
 
 ![](http://macgera.s3.amazonaws.com/articles/yalta-walk/yalta-IMG_5977.jpg)
 
-Голубь решил что у Илича на голове обзор лучше.
+Голубь решил, что у Илича на голове обзор лучше.
 {: .mdesc }
 
 ![](http://macgera.s3.amazonaws.com/articles/yalta-walk/yalta-IMG_6083.jpg)
@@ -64,22 +64,22 @@ poster: http://macgera.s3.amazonaws.com/articles/yalta-walk/vawe-come.jpg
 
 ![](http://macgera.s3.amazonaws.com/articles/yalta-walk/yalta-IMG_6352.jpg)
 
-Парень в перевернутом Украинском флаге.
+Парень в перевернутом украинском флаге.
 {: .mdesc }
 
 ![](http://macgera.s3.amazonaws.com/articles/yalta-walk/yalta-IMG_6607.jpg)
 
-Котики, куда ж без них да? Это кстати возле Ливадийского двораца.
+Котики, куда ж без них да? Это кстати возле Ливадийского дворца.
 {: .mdesc }
 
 ![](http://macgera.s3.amazonaws.com/articles/yalta-walk/yalta-IMG_6637.jpg)
 
-Все там же, в Ливадийском дворце.
+Все там же, на территории Ливадийского дворца.
 {: .mdesc }
 
 ![](http://macgera.s3.amazonaws.com/articles/yalta-walk/yalta-IMG_6151.jpg)
 
-А что меня всегда бесило в Крыму, в Одессе, и других совковых курортных городах, так это использование животных для того что бы выманить денег. Не исключением является и Ялта. Собака тупо просит денег для хозяина, который бухает в соседней кафешке.
+А что меня всегда бесило в Крыму, в Одессе, и других совковых курортных городах, так это использование животных для того, чтобы выманить денег. Ялта не исключение. Собака тупо просит денег для хозяина, который бухает в соседней кафешке.
 {: .mdesc }
 
 ![](http://macgera.s3.amazonaws.com/articles/yalta-walk/yalta-IMG_6578.jpg)
@@ -99,7 +99,7 @@ poster: http://macgera.s3.amazonaws.com/articles/yalta-walk/vawe-come.jpg
 
 ![](http://macgera.s3.amazonaws.com/articles/yalta-walk/yalta-IMG_6300.jpg)
 
-С вагончика канатной дороги попробовал сфотографировать церквушчеку.
+С вагончика канатной дороги попробовал сфотографировать церквушечку.
 {: .mdesc }
 
 ![](http://macgera.s3.amazonaws.com/articles/yalta-walk/yalta-IMG_6313.jpg)
