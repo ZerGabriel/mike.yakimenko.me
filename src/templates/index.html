@@ -4,14 +4,14 @@
 
 {% block content %}
 {% if page.meta.poster %}
-<div class="post-poster" data-role="post-poster" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url({{ page.meta.poster }});">
+<div class="post-poster" data-role="post-poster" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url({{ page.meta.poster }});">
     <div class="poster-content">
         <header>
             <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
             <div class="meta">
                 <i class="fa fa-clock-o"></i> {{ page.date|dateformat }} в {{ page.date|timeformat }}
                 {% if page.meta.tags|length %}
-                    <i class="fa fa-tags"></i> 
+                    <i class="fa fa-tags"></i>
                     {% for page_tag in page.meta.tags %}
                         <a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a>{% if loop.last %}{% else %}, {% endif %}
                     {% endfor %}
@@ -29,7 +29,7 @@
         <div class="meta">
             <i class="fa fa-clock-o"></i> {{ page.date|dateformat }} в {{ page.date|timeformat }}
             {% if page.meta.tags|length %}
-                <i class="fa fa-tags"></i> 
+                <i class="fa fa-tags"></i>
                 {% for page_tag in page.meta.tags %}
                     <a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a>{% if loop.last %}{% else %}, {% endif %}
                 {% endfor %}
