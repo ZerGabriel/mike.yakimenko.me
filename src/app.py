@@ -76,7 +76,8 @@ def get_years(pages):
 @app.route('/')
 def index():
     page = get_posts()[0]
-    return render_template('index.html', page = page)
+    pages = get_posts()[1:6]
+    return render_template('index.html', page = page, pages = pages)
 
 @app.route('/tag/<string:tag>/')
 def tag(tag):
@@ -84,7 +85,7 @@ def tag(tag):
     return render_template('tag.html', pages = get_taget(posts, tag), tag = tag)
 
 @app.route('/rss/')
-def feed(): 
+def feed():
     pages = get_posts()[:FEED_MAX_LINKS]
     now = datetime.now()
     return render_template('base.rss', pages = pages, BASE_URL = BASE_URL, build_date = now)
