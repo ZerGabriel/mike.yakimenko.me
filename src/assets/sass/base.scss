@@ -2,7 +2,7 @@ $text-color: #303030;
 $link-color: #3498db;
 
 body {
-    font-size: rem(18);    
+    font-size: rem(18);
     line-height: 150%;
     background: #fff;
     font-family: Georgia, serif;
@@ -25,6 +25,9 @@ img {
     display: block;
     max-width: 100%;
     vertical-align: top;
+    &.portrait {
+        max-height: 86vh;
+    } // &.portrait
 } // img
 
 a {
