@@ -5,7 +5,6 @@ import sys
 from flask import Flask, render_template, url_for, request
 from flask_flatpages import FlatPages
 from datetime import date, datetime
-from pagination import Pagination
 from flask_frozen import Freezer
 
 # config
