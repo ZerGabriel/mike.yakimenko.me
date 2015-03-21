@@ -9,7 +9,7 @@ from pagination import Pagination
 from flask_frozen import Freezer
 
 # config
-DEBUG = True
+DEBUG = False
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'content'
@@ -137,4 +137,4 @@ if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
         freezer.freeze()
     else:
-        app.run(port=8000)
+        app.run(port=8000, debug=True)
