@@ -15,7 +15,6 @@
 
     // document ready
     $(window).on('load', function() {
-        mainMenu();
         imagePortrait();
     });
 
