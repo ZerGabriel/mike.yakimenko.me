@@ -7,7 +7,7 @@
         <language>{% block lang %}ru-RU{% endblock %}</language>
         <pubDate>{{ build_date }}</pubDate>
         <lastBuildDate>{{ build_date }}</lastBuildDate>
-        <copyright>Мои права защищены :) 2010-2013 Михаил Якименко</copyright>        
+        <copyright>Мои права защищены :) 2010-2013 Михаил Якименко</copyright>
         <webMaster>macgera@gmail.com (Михаил Якименко)</webMaster>
         <managingEditor>macgera@gmail.com (Михаил Якименко)</managingEditor>
         <ttl>3600</ttl>
