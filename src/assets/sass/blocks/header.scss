@@ -1,86 +1,43 @@
-.menu-bars {
-    position: fixed;
-    right: 2%;
-    top: 1.2em;
-    z-index: 300;
-    text-rendering: auto;
-    font-family: FontAwesome;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    border-radius: 2px;
-    box-sizing: border-box;
-    padding: 0.4em 0 0 0;
-    width: 1.8em;
-    height: 1.8em;
+body > header {
+    @include clearfix;
+    margin: 1em 10% 0em 10%;
+    padding-bottom: 1em;
     text-align: center;
-    background: rgba(255, 255, 255, 1);
-    line-height: 1.2;
-    font-size: 1em;
-    
-    color: #000;
-    text-decoration: none;
-
-    cursor: pointer;
-    &:after {
-        content: '\f0c9';
-    } // &:after
-    &.active {
-        background: #2980b9;
-        &:after {
-            color: #fff;
-        } // &:after
-    } // &.active
-    @include bp(xs) {
-        right: 2%;
-    }
-    @include bp(sm) {
-        right: 2%;
-    }
-    @include bp(md) {
-        right: 5%;
-    }
-    @include bp(lg) {
-        right: 5%;
-    }
-} // menu-bars
-
-.home {
-    position: fixed;
-    left: 2%;
-    top: 1.2em;
-    z-index: 300;
-    text-rendering: auto;
-    font-family: FontAwesome;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    border-radius: 2px;
-    box-sizing: border-box;
-    padding: 0.4em 0 0 0;
-    width: 1.8em;
-    height: 1.8em;
-    text-align: center;
-    background: rgba(255, 255, 255, 1);
-    line-height: 1.2;
-    font-size: 1em;
-
-    color: #000;
-    text-decoration: none;
-
-    &:after {
-        content: '\f015';
-    } // &:after
-    @include bp(xs) {
-        left: 2%;
-    }
-    @include bp(sm) {
-        left: 2%;
-    }
-    @include bp(md) {
-        left: 5%;
-    }
-    @include bp(lg) {
-        left: 5%;
-    }
-} // home
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            @include inline-middle;
+            padding: 0;
+            margin-left: -.3em;
+            &:after {
+                @include inline-middle;
+                content: '\272A';
+                margin: 0 .4em;
+                font-size: .7em;
+                color: #C2C2C2;
+                opacity: 0.5;
+            } // &:after
+            &:nth-child(1) {
+                margin-left: 0em;
+            }
+            &:nth-last-child(1) {
+                &:after {
+                    content: none;
+                } // &:after
+            } // &:nth-last-child(1)
+            h1 {
+                display: inline;
+                font-size: 1em;
+                margin: 0;
+            }
+            a {
+                font-size: .8em;
+                opacity: 0.5;
+                &:hover {
+                    opacity: 1;
+                }
+            } // a
+        } // li
+    } // ul
+} // body > header

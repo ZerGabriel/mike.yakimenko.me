@@ -41,20 +41,20 @@
 </head>
 <body>
 
-<div class="main-menu" data-role="menu">
-    <div class="menu-in-wrapper">
-        <div class="menu-in">
-            <ul>
-                <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
-                <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
-                <li><a href="{{ url_for("page", path="rss") }}">RSS</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-{% block home_link %}{% endblock %}
-<div class="menu-bars" data-role="menu-trigger"></div>
+<!-- header -->
+<header class="{% block header_class %}{% endblock %}">
+    <ul>
+        <li>
+            <h1>
+                <a href="{{ url_for("index") }}">Блог Михаила Якименко</a>
+            </h1>
+        </li>
+        <li><a href="{{ url_for("page", path="page/about") }}">Обо мне</a></li>
+        <li><a href="{{ url_for("page", path="archive") }}">Архив</a></li>
+        <li><a href="{{ url_for("page", path="rss") }}">RSS</a></li>
+    </ul>
+</header>
+<!-- /header -->
 
 {% block content %}
 {% endblock content %}
@@ -68,6 +68,19 @@
     </span>
 </footer>
 <!-- /footer -->
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'macgera';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 
 </body>
 </html>
