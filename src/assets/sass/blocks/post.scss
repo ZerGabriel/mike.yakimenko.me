@@ -3,52 +3,22 @@
     background-size: cover !important;
     background-position: center center !important;
     width: 100%;
-    height: 65vh;
+    height: 50vh;
     min-height: 180px;
     max-height: auto;
-    display: table;
-    &.in-feed {
-        display: block;
-        height: 65vh;
-    } // &.in-feed
-    .poster-content {
-        width: 100%;
-        display: table-cell;
-        vertical-align: middle;
-        header {
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            padding: 1em .5em;
-            box-sizing: border-box;
-            h1 {
-                font-size: 1.4em;
-                margin: 0;
-                a {
-                    color: #fff;
-                    text-decoration: none;
-                    &:hover {
-                        color: #fff;
-                        text-decoration: underline;
-                        background: none;
-                    } // &:hover
-                } // a
-                @include bp(md) {
-                    font-size: 1.8em;
-                } // md
-                @include bp(lg) {
-                    font-size: 1.8em;
-                } // lg
-            } // h1
-            .meta {
-                color: #fff;
-                a {
-                   color: inherit; 
-                } // a
-            } // meta
-        } // header
-    } // poster-content
+    display: block;
 } // post-poster
+
+[class^="meta-"] {
+    @include transition(all, 0.3s, ease);
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    } // &:hover
+    + [class^="meta-"] {
+        margin-left: 10px;
+    } // + [class^="meta-"]
+} // [class^="meta-"]
 
 .post {
     box-sizing: border-box;

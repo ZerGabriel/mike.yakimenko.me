@@ -15,13 +15,20 @@
         <li>
             <h1><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h1>
             <div class="meta">
-                <i class="fa fa-clock-o"></i> {{ page.date }}
-                {% if page.meta.tags|length %}
-                    <i class="fa fa-tags"></i> 
-                    {% for page_tag in page.meta.tags %}
-                        <a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a>{% if loop.last %}{% else %}, {% endif %}
-                    {% endfor %}
-                {% endif %}
+                <time class="meta-date">
+                    <i class="fa fa-clock-o"></i> {{ page.date|dateformat }} в {{ page.date|timeformat }}
+                </time>
+                <span class="meta-tags">
+                    {% if page.meta.tags|length %}
+                        <i class="fa fa-tags"></i>
+                        {% for page_tag in page.meta.tags %}
+                            <a href="{{ url_for("tag", tag=page_tag) }}">{{ page_tag }}</a>{% if loop.last %}{% else %}, {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </span>
+                <span class="meta-comments">
+                    <i class="fa fa-comments-o"></i> <a href="{{ url_for("page", path=page.path) }}#disqus_thread"></a>
+                </span>
             </div>
         </li>
         {% endfor %}
