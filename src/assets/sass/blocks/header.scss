@@ -6,28 +6,23 @@ body > header {
     ul {
         margin: 0;
         padding: 0;
-        li {
-            @include inline-middle;
-            padding: 0;
-            margin-left: -.3em;
-            &:after {
-                @include inline-middle;
+        li + li {
+            &:before {
+                display: inline;
                 content: '\272A';
                 margin: 0 .4em;
                 font-size: .7em;
                 color: #C2C2C2;
                 opacity: 0.5;
-            } // &:after
-            &:nth-child(1) {
-                margin-left: 0em;
-            }
-            &:nth-last-child(1) {
-                &:after {
-                    content: none;
-                } // &:after
-            } // &:nth-last-child(1)
+            } // &:before
+        }
+        li {
+            display: inline;
+            padding: 0;
+            margin-left: -.3em;
             h1 {
-                display: inline;
+                display: inline-block;
+                // vertical-align: middle;
                 font-size: 1em;
                 margin: 0;
             }
