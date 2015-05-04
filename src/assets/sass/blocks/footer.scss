@@ -6,6 +6,11 @@ body > footer {
         display: block;
         font-size: .7em;
         font-style: italic;
+        @include transition(all, 0.3s, ease);
+        opacity: 0.5;
+        &:hover {
+            opacity: 1;
+        } // &:hover
     } // .copyrights, .designed-by
     .copyrights {
         &:before {
