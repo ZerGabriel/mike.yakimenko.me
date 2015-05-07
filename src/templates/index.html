@@ -31,6 +31,12 @@
        {{ page.html|safe }}
     </article>
     <footer>
+        <div class="meta bottom">
+            <span class="meta-comments">
+                <i class="fa fa-comments-o"></i> <a href="{{ url_for("page", path=page.path) }}#disqus_thread"></a>
+                <a href="{{ url_for("page", path=page.path) }}#comments">Оставьте комментарий</a>
+            </span>
+        </div>
         <div class="social">
             <div class="social-likes" data-url="http://macgera.name{{ url_for("page", path=page.path) }}" data-title="{{ page.title }} – Блог Михаила Якименко">
                 <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>

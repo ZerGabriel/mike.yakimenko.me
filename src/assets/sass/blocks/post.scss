@@ -9,17 +9,6 @@
     display: block;
 } // post-poster
 
-[class^="meta-"] {
-    @include transition(all, 0.3s, ease);
-    opacity: 0.5;
-    &:hover {
-        opacity: 1;
-    } // &:hover
-    + [class^="meta-"] {
-        margin-left: 10px;
-    } // + [class^="meta-"]
-} // [class^="meta-"]
-
 .post {
     box-sizing: border-box;
     margin: 0 5% 0 5%;
