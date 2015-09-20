@@ -1,9 +1,9 @@
 host='macgera'
-path='projects/macgera'
+path='projects/mike.yakimenko.me'
 
 [deploy]
 git checkout master
 git pull
-source ~/.envs/macgera/bin/activate
+source ~/.envs/mike.yakimenko.me/bin/activate
 grunt build
 ./src/app.py build
