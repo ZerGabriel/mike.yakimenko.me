@@ -12,13 +12,13 @@ poster: http://macgera.s3.amazonaws.com/mg-poster.jpg
 ### В сети
 
 <ul class="social">
-    <li><a href="https://twitter.com/macgera/" target="_blank" class="icon"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://twitter.com/mikeyakimenko/" target="_blank" class="icon"><i class="fa fa-twitter"></i></a></li>
     <li><a href="https://www.facebook.com/mihail.yakimenko" target="_blank" class="icon"><i class="fa fa-facebook"></i></a></li>
     <li><a rel="author" href="https://plus.google.com/+%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%D0%AF%D0%BA%D0%B8%D0%BC%D0%B5%D0%BD%D0%BA%D0%BE?rel=author" target="_blank" class="icon"><i class="fa fa-google-plus"></i></a></li>
-    <li><a href="https://github.com/macgera" target="_blank" class="icon"><i class="fa fa-github-square"></i></a></li>
+    <li><a href="https://github.com/mikeyakimenko" target="_blank" class="icon"><i class="fa fa-github-square"></i></a></li>
     <li><a href="http://www.linkedin.com/in/myakimenko" target="_blank" class="icon"><i class="fa fa-linkedin-square"></i></a></li>
     <li><a href="http://www.flickr.com/photos/96265949@N08/" target="_blank" class="icon"><i class="fa fa-flickr"></i></a></li>
-    <li><a href="http://instagram.com/macgera" target="_blank" class="icon"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="http://instagram.com/mikeyakimenko" target="_blank" class="icon"><i class="fa fa-instagram"></i></a></li>
 </ul>
 
 ### Контакты
