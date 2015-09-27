@@ -42,12 +42,12 @@ poster: http://greendogstorage.s3.amazonaws.com/low-tide/low-tide.jpg
 
 ![](http://greendogstorage.s3.amazonaws.com/low-tide/IMG_20150503_164712.jpg)
 
-<div class=“pics-group”>
-    <div class=“pic”>
-        <a target=“blanc” href=“https://instagram.com/p/2TXBtyn8If/“><img src=“http://greendogstorage.s3.amazonaws.com/low-tide/11202546_1425253387792244_405692130_n.jpg” alt=“”></a>
+<div class="pics-group">
+    <div class="pic">
+        <a target="blanc" href="https://instagram.com/p/2TXBtyn8If/""><img src="http://greendogstorage.s3.amazonaws.com/low-tide/11202546_1425253387792244_405692130_n.jpg" alt=""></a>
     </div>
-    <div class=“pic”>
-        <a target=“blanc” href=“https://instagram.com/p/2TV5_fn8Gw/“><img src=“http://greendogstorage.s3.amazonaws.com/low-tide/11226626_951287148263931_21999352_n.jpg” alt=“”></a>
+    <div class="pic">
+        <a target="blanc" href="https://instagram.com/p/2TV5_fn8Gw/""><img src="http://greendogstorage.s3.amazonaws.com/low-tide/11226626_951287148263931_21999352_n.jpg" alt=""></a>
     </div>
 </div>
 
