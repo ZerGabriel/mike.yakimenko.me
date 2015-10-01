@@ -1,4 +1,4 @@
-host='macgera'
+host='mikeserver'
 path='projects/mike.yakimenko.me'
 
 [deploy]
