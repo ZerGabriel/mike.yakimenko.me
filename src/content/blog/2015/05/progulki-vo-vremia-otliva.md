@@ -15,12 +15,12 @@ poster: http://greendogstorage.s3.amazonaws.com/low-tide/low-tide.jpg
 
 Некоторые все же купаются, да и детям в мели видать нравится. Совсем маленькие дети собирают мелких крабов отшельников в бутылки.
 
-<div class=“pics-group”>
-    <div class=“pic”>
-        <a target=“blanc” href=“https://instagram.com/p/2OVIGvH8Gt/“><img src=“http://greendogstorage.s3.amazonaws.com/low-tide/11189724_1468257573465224_1770022442_n.jpg” alt=“”></a>
+<div class="pics-group">
+    <div class="pic">
+        <a target="blanc" href="https://instagram.com/p/2OVIGvH8Gt/"><img src="http://greendogstorage.s3.amazonaws.com/low-tide/11189724_1468257573465224_1770022442_n.jpg" alt=""></a>
     </div>
-    <div class=“pic”>
-        <a target=“blanc” href=“https://instagram.com/p/2OUF2UH8Ec/“><img src=“http://greendogstorage.s3.amazonaws.com/low-tide/11208286_895193683855469_658930944_n.jpg” alt=“”></a>
+    <div class="pic">
+        <a target="blanc" href="https://instagram.com/p/2OUF2UH8Ec/"><img src="http://greendogstorage.s3.amazonaws.com/low-tide/11208286_895193683855469_658930944_n.jpg" alt=""></a>
     </div>
 </div>
 
